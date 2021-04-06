@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">AcademicPlanner</string>
+    <string name="app_title">Academic Planner</string>
+    <string name="login_text">Login</string>
+    <string name="register_text">Register</string>
+    <string name="email_hint">Email Address</string>
+    <string name="password_hint">Password</string>
+    <string name="registration_prompt">Don\'t have an account yet?</string>
+    <string name="login_prompt">Already have an account?</string>
 </resources>
