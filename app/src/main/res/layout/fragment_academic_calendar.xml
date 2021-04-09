@@ -3,14 +3,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:padding="@dimen/activity_padding"
     tools:context=".ui.fragments.AcademicCalendarFragment">
 
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:text="@string/academic_calender_text"
-        android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5" />
+    <CalendarView
+        android:id="@+id/academic_calendar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
 
 </FrameLayout>
