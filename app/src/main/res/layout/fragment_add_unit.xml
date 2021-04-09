@@ -20,7 +20,8 @@
             android:id="@+id/unit_code_field"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@android:color/transparent" />
+            android:background="@android:color/transparent"
+            android:inputType="text" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <TextView
@@ -46,7 +47,8 @@
             android:id="@+id/assignment_field"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@android:color/transparent" />
+            android:background="@android:color/transparent"
+            android:inputType="number" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <TextView
@@ -72,7 +74,8 @@
             android:id="@+id/cat_field"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@android:color/transparent" />
+            android:background="@android:color/transparent"
+            android:inputType="number" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <TextView
@@ -98,7 +101,8 @@
             android:id="@+id/exam_field"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@android:color/transparent" />
+            android:background="@android:color/transparent"
+            android:inputType="number" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <TextView

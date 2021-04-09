@@ -2,7 +2,7 @@ package ke.co.academicplanner.data.models
 
 import com.google.firebase.firestore.DocumentId
 
-class Email(
+data class Email(
     @DocumentId val id: String? = null,
     val address: String? = null,
     val userId: String? = null,
