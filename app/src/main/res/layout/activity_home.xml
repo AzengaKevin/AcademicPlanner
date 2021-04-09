@@ -7,62 +7,13 @@
     tools:context=".ui.HomeActivity"
     tools:viewBindingIgnore="true">
 
-    <GridLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-        <TextView
-            android:id="@+id/academic_calender_tv"
-            android:layout_width="160dp"
-            android:layout_height="142dp"
-            android:layout_row="1"
-            android:layout_column="1"
-            android:gravity="center_horizontal"
-            android:padding="8dp"
-            android:text="@string/academic_calender_text"
-            android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6"
-            app:drawableTopCompat="@drawable/event" />
-
-        <TextView
-            android:id="@+id/grade_calculator_tv"
-            android:layout_width="160dp"
-            android:layout_height="142dp"
-            android:layout_row="1"
-            android:layout_column="2"
-            android:gravity="center_horizontal"
-            android:padding="8dp"
-            android:text="@string/grade_calculator_text"
-            android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6"
-            app:drawableTopCompat="@drawable/calculate" />
-
-        <TextView
-            android:id="@+id/email_tutor_tv"
-            android:layout_width="160dp"
-            android:layout_height="142dp"
-            android:layout_row="2"
-            android:layout_column="1"
-            android:gravity="center_horizontal"
-            android:padding="8dp"
-            android:text="@string/email_tutor_text"
-            android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6"
-            app:drawableTopCompat="@drawable/email" />
-
-        <TextView
-            android:id="@+id/deadline_summary_tv"
-            android:layout_width="160dp"
-            android:layout_height="142dp"
-            android:layout_row="2"
-            android:layout_column="2"
-            android:gravity="center_horizontal"
-            android:padding="8dp"
-            android:text="@string/deadline_summary_text"
-            android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6"
-            app:drawableTopCompat="@drawable/deadline" />
-
-    </GridLayout>
-
+    <fragment
+        android:id="@+id/fragment"
+        android:name="androidx.navigation.fragment.NavHostFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:defaultNavHost="true"
+        app:navGraph="@navigation/nav_graph"
+        tools:layout_editor_absoluteX="131dp"
+        tools:layout_editor_absoluteY="452dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
