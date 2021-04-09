@@ -7,12 +7,11 @@
     <string name="password_hint">Password</string>
     <string name="registration_prompt">Don\'t have an account yet?</string>
     <string name="login_prompt">Already have an account?</string>
-
     <string name="academic_calender_text">Academic Calendar</string>
     <string name="grade_calculator_text">Grade Calculator</string>
-    <string name="email_tutor_text">Email
-        Tutor</string>
+    <string name="email_tutor_text">Email Tutor</string>
     <string name="deadline_summary_text">Deadline Summary</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="subject_text">Subject</string>
+    <string name="message_text">Message</string>
+    <string name="send_email">Send Email</string>
 </resources>

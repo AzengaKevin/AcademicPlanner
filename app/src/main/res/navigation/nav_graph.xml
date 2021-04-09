@@ -8,7 +8,7 @@
     <fragment
         android:id="@+id/defaultFragment"
         android:name="ke.co.academicplanner.ui.fragments.DefaultFragment"
-        android:label="fragment_default"
+        android:label="@string/app_title"
         tools:layout="@layout/fragment_default">
         <action
             android:id="@+id/action_view_deadline_summary"
