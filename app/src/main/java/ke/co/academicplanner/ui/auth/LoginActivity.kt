@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.util.Log
 import android.util.Patterns
 import android.view.View
+import android.widget.Toast
 import com.google.firebase.auth.FirebaseAuth
 import ke.co.academicplanner.databinding.ActivityLoginBinding
 import ke.co.academicplanner.ui.HomeActivity
@@ -55,7 +56,7 @@ class LoginActivity : AppCompatActivity() {
             binding.loginProgressbar.visibility = View.VISIBLE
             firebaseAuth.signInWithEmailAndPassword(email, password)
                 .addOnCompleteListener {
-                    if(it.isSuccessful){
+                    if (it.isSuccessful) {
 
                         Log.i(TAG, "signInWithEmailAndPassword: success")
 
@@ -67,11 +68,18 @@ class LoginActivity : AppCompatActivity() {
 
                         startActivity(intent)
 
-                    }else{
+                    } else {
 
                         Log.e(TAG, "signInWithEmailAndPassword: failed", it.exception)
 
                         binding.loginProgressbar.visibility = View.GONE
+
+
+                        Toast.makeText(
+                            this@LoginActivity,
+                            "Authentication failed.",
+                            Toast.LENGTH_SHORT
+                        ).show()
                     }
                 }
 
