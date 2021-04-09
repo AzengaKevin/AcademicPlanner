@@ -62,11 +62,7 @@ class LoginActivity : AppCompatActivity() {
 
                         binding.loginProgressbar.visibility = View.GONE
 
-                        val intent = Intent(this@LoginActivity, HomeActivity::class.java).apply {
-                            flags = Intent.FLAG_ACTIVITY_CLEAR_TASK or Intent.FLAG_ACTIVITY_NEW_TASK
-                        }
-
-                        startActivity(intent)
+                        sendHome()
 
                     } else {
 
@@ -91,5 +87,25 @@ class LoginActivity : AppCompatActivity() {
 
             startActivity(intent)
         }
+    }
+
+    override fun onStart() {
+        super.onStart()
+
+        val currentUser = firebaseAuth.currentUser;
+
+        if (currentUser != null) {
+            sendHome()
+        }
+    }
+
+    private fun sendHome() {
+
+        val intent = Intent(this@LoginActivity, HomeActivity::class.java).apply {
+            flags = Intent.FLAG_ACTIVITY_CLEAR_TASK or Intent.FLAG_ACTIVITY_NEW_TASK
+        }
+
+        startActivity(intent)
+
     }
 }
