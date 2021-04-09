@@ -14,4 +14,7 @@
     <string name="subject_text">Subject</string>
     <string name="message_text">Message</string>
     <string name="send_email">Send Email</string>
+    <string name="deadline_text">Deadline</string>
+    <string name="deadline_not_set_text">Deadline Not Set</string>
+    <string name="upsert_date_text">Upsert Date</string>
 </resources>
