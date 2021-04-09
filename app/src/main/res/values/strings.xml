@@ -17,4 +17,19 @@
     <string name="deadline_text">Deadline</string>
     <string name="deadline_not_set_text">Deadline Not Set</string>
     <string name="upsert_date_text">Upsert Date</string>
+
+    <string name="unit_code_hint">Unit Code</string>
+    <string name="unit_code_helper">The unit code for the score </string>
+
+    <string name="assignment_mark_hint">Assignment</string>
+    <string name="assignment_mark_helper">What you scored in your assignment (out of 30)</string>
+
+    <string name="cat_mark_hint">CAT</string>
+    <string name="cat_mark_helper">What you scored in your CAT (out of 30)</string>
+
+    <string name="exam_mark_hint">Exam</string>
+    <string name="exam_mark_helper">What you scored in your exam (out of 100)</string>
+
+    <string name="save_score_text">Save Score</string>
+    <string name="add_unit_text">Add Unit</string>
 </resources>

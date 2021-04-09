@@ -37,10 +37,23 @@
         android:id="@+id/gradeCalculatorFragment"
         android:name="ke.co.academicplanner.ui.fragments.GradeCalculatorFragment"
         android:label="@string/grade_calculator_text"
-        tools:layout="@layout/fragment_grade_calculator" />
+        tools:layout="@layout/fragment_grade_calculator">
+        <action
+            android:id="@+id/action_gradeCalculatorFragment_to_addUnitFragment"
+            app:destination="@id/addUnitFragment" />
+    </fragment>
     <fragment
         android:id="@+id/emailTutorFragment"
         android:name="ke.co.academicplanner.ui.fragments.EmailTutorFragment"
         android:label="@string/email_tutor_text"
         tools:layout="@layout/fragment_email_tutor" />
+    <fragment
+        android:id="@+id/addUnitFragment"
+        android:name="ke.co.academicplanner.ui.fragments.AddUnitFragment"
+        android:label="@string/add_unit_text"
+        tools:layout="@layout/fragment_add_unit">
+        <action
+            android:id="@+id/action_addUnitFragment_to_gradeCalculatorFragment"
+            app:destination="@id/gradeCalculatorFragment" />
+    </fragment>
 </navigation>

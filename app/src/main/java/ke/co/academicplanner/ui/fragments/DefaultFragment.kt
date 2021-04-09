@@ -15,11 +15,6 @@ class DefaultFragment : Fragment() {
     private lateinit var binding: FragmentDefaultBinding
     private lateinit var navController: NavController
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-
-    }
-
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
