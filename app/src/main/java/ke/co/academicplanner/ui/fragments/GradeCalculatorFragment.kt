@@ -83,10 +83,29 @@ class GradeCalculatorFragment : Fragment() {
                     val scoresList = value.toObjects(Score::class.java)
                     adapter.scoresList = scoresList
 
+                    var sum = 0.00
+
+                    for (score in scoresList) sum += score.getTotal()
+
+                    var finalScore = sum / scoresList.size
+
+                    binding.gradeTv.text = getGrade(finalScore).toString()
+
+
                 } else {
                     Toast.makeText(requireContext(), "Empty scores", Toast.LENGTH_SHORT).show()
                 }
             }
+    }
+
+    private fun getGrade(score: Double): Char {
+        return when {
+            score > 70 -> 'A'
+            score > 60 -> 'B'
+            score > 50 -> 'C'
+            score > 40 -> 'D'
+            else -> 'F'
+        }
     }
 
 }
