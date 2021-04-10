@@ -9,4 +9,13 @@ data class Score(
     var assignment: Int? = null,
     var cat: Int? = null,
     var exam: Int? = null
-)
+) {
+    fun getTotal(): Double {
+
+        val assignmentContribution = assignment!!.toDouble() / 30 * 10
+        val catContribution = cat!!.toDouble() / 30 * 20
+        val examContribution = exam!!.toDouble() / 100 * 70
+
+        return assignmentContribution + catContribution + examContribution
+    }
+}
